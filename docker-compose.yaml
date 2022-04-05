@@ -1,0 +1,9 @@
+version: '3'
+services:
+  webserver:
+    restart: always
+    image: php:7.2-apache
+    ports:
+      - 80:80
+    volumes:
+      - "/share:/var/www/html"
